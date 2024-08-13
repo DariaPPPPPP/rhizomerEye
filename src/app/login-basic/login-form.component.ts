@@ -14,6 +14,7 @@ export class LoginFormComponent {
   }
 
   onSubmit(userInput: HTMLInputElement, passwordInput: HTMLInputElement): void {
+    console.log("SUBMITTTTTTTTTTT")
     this.authenticationService.login(userInput.value, passwordInput.value)
       .subscribe(
         user => {

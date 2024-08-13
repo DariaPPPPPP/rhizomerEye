@@ -52,6 +52,7 @@ import {DetailIncomingFacetComponent} from './facet/detail-incoming-facet/detail
 import {SearchComponent} from './search/search.component';
 import {TypeFacetComponent} from './facet/type-facet/type-facet.component';
 import {TypeRangeComponent} from './range/type-range/type-range.component';
+import { SearchInputComponent } from './search-input/search-input.component';
 import {ChartRepresentationComponent} from './facet/chart-representation/chart-representation.component';
 import {GoogleChartsModule} from 'angular-google-charts';
 import {environment} from '../environments/environment';
@@ -89,7 +90,8 @@ import {MapPopupService} from './facet/chart-representation/map-chart/map-popup.
     TypeFacetComponent,
     TypeRangeComponent,
     ChartRepresentationComponent,
-    MapChartComponent
+    MapChartComponent,
+    SearchInputComponent
   ],
   imports: [
     AppRoutingModule,
