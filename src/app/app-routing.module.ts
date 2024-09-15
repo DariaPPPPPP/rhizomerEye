@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: 'datasets/:did/search', component: SearchComponent },
   { path: 'datasets/:did/:cid/detail', component: DetailClassComponent, canActivate: [LoggedInGuard] },
   { path: 'datasets/:did/:cid/resource', component: ResourceComponent },
+  { path: 'datasets/:did/classes/:cid/instances', component: ListFacetComponent },
   { path: 'datasets/:did/:cid/edit-resource', loadChildren: () =>
       import('./resource/edit-resource/edit-resource.module').then(m => m.EditResourceModule) },
   { path: 'datasets/:did/:cid', component: ListFacetComponent },

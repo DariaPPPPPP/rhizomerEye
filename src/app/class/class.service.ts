@@ -24,6 +24,7 @@ export class ClassService extends Rest2Service<Class> {
   }
 
   getInstances(did: string, cid: string, filters: Filter[], page: number, pageSize: number): Observable<any> {
+    console.log("INSIDE GET INSTANCES")
     let params = Filter.toQuery(filters);
     params = params.append('page', (page - 1).toString());
     params = params.append('size', pageSize.toString());
